@@ -164,8 +164,10 @@ hr{
     font-size: 40px;
     color: #fcfcfc;
     text-align: center;
-    background-color: #000;
-    opacity: 1;
+    background-color: #000000;
+    padding-bottom: 2%;
+  
+
 }
 #watchdiv{
     background-color: #04101d;
@@ -174,6 +176,8 @@ hr{
     padding-left: 20pt;
     font-weight: 600;
     max-width: 100%;
+    margin-top: 2px;
+    
      
 }
 #mobilediv{

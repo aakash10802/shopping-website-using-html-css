@@ -1,14 +1,9 @@
 
-body {
-    background-color: #d6e2e700; 
-    font-family: 'Poppins', sans-serif; 
-    margin: 0; 
-    padding: 0;  
-}
+
 
 /* Header Styles */
 header nav.navbar {
-    background-color: rgb(0, 0, 0);  
+    background-color: #04101d;  
 }
 
 header nav.navbar .navbar-brand {
@@ -70,4 +65,135 @@ header nav.navbar .navbar-nav .nav-link i {
 }
 #carouselExampleDark{
     padding-top: 1vh;
+}
+/*   CSS for round carousel */
+/* index.css */
+.round-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.round-carousel-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.round-carousel-item {
+    text-align: center;
+    display: inline-block;
+    min-width: 100px;
+    margin:10px
+}
+
+.round-carousel-item img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-color: black;
+    
+    
+}
+
+.round-carousel-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+.round-carousel-item-1 {
+    text-align: center;
+    margin-bottom: -20px;
+    
+    
+}
+.round-carousel{
+    color: #e6dede;
+}
+.footer {
+    background-color: #04101d;
+    padding: 5vh;
+    margin-top: 20vh;
+}
+
+.footer h5 {
+    color: #f7efef;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #f7efef;
+}
+
+.footer ul li a {
+    color: #e6dede;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fdfbfb;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #faf8f8;
+}
+hr{
+    color: white;
+}
+#Cartbutton{
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: -2px;
+
+    
+}
+.hr1{
+    color: black;
+}
+#watches{
+    font-family: "Poppins" 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2vh;    
+    font-weight: 600;  
+    font-style: italic;
+    font-size: 40px;
+    color: #fcfcfc;
+    text-align: center;
+    background-color: #000;
+    opacity: 1;
+}
+#watchdiv{
+    background-color: #04101d;
+    padding: 2vh;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/watch_screentime_24dp_FILL0_wght400_GRAD0_opsz24.svg?alt=media&token=84e55bbf-92d7-45ab-a6fe-30905627e325);
+    padding-left: 20pt;
+    font-weight: 600;
+    max-width: 100%;
+     
+}
+#mobilediv{
+    background-color: #04101d;
+    padding: 2vh;
+    padding-left: 20pt;
+    font-weight: 600;
+    max-width: 100%;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/smartphone_24dp_FILL0_wght400_GRAD0_opsz24.png?alt=media&token=0f0e04ae-c269-4061-a9d2-e25fba3d4514);
+     
+    margin-top: 2vh;
+
+}
+#mobile{
+    font-family: "Poppins" 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2vh;
+    font-weight: 600;  
+    font-style: italic;
+    font-size: 40px;
+    color: #fcfcfc;
+    text-align: center;
+    background-color: #3017173f;
 }

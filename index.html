@@ -1,9 +1,14 @@
+         
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Website</title>
+    <!-- Font class -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JS -->
@@ -17,37 +22,62 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">V-kart</a>
+                <button type="button" class="btn btn-outline-primary" style="color: white;"><i class="fa fa-location-arrow" aria-hidden="true"></i> Login to add location</button>
+                  
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    
+                    
                     <form class="d-flex search-bar mx-auto">
                         <input class="form-control" type="search" placeholder="Search for products, brands and more" aria-label="Search">
                         <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                    <ul class="navbar-nav ms-auto"> <!-- ms-auto class aligns items to the right -->
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa-solid fa-star"></i>Features</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-tags"></i>Pricing</a>
-                        </li>
+                      
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-ellipsis-h"></i> More
+                                <i class="fa-solid fa-ellipsis-h"></i> Language
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                <li><a class="dropdown-item" href="#">Malayalam</a></li>
+                                <li><a class="dropdown-item" href="#">Tamil</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create account</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                      
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-star"></i>Favourites</a>
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-h"></i> Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mobile</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                                <li><a class="dropdown-item" href="#">Pheripherals</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plus user</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
@@ -60,10 +90,10 @@
         <nav class="navbar navbar-expand-lg secondary-nav">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSecondary" aria-controls="navbarSecondary" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-chevron-down fa-rotate-270" style="color: #f8f9fa;"></i></span>
+                    <span id="rightarrow" class="navbar-toggler-icon"><i class="fa-solid fa-chevron-down fa-rotate-270" style="color: #fafafa;"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSecondary">
-                    <ul class="navbar-nav me-auto"> <!-- me-auto class aligns items to the left -->
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Electronics</a>
                         </li>
@@ -88,156 +118,468 @@
         </nav>
     </header>
 
-
-     <!-- Carousel -->
-     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-              <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/corsol.jpeg?alt=media&token=0a0ba3d6-daf3-4005-b04c-26b04130800a" class="d-block w-100 mx-auto carousel-image" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-              <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/2.jpg?alt=media&token=48cee6af-c79c-4877-88ce-a8eaee7dc3e4" class="d-block w-100 mx-auto carousel-image" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
-          </div>
-          <div class="carousel-item">
-              <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/7.jpg?alt=media&token=fd9a9226-1534-4f9f-bd31-af7a230c614d" class="d-block w-100 mx-auto carousel-image" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-              </div>
-          </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
-  </div>
+    <!-- Round icon carousel -->
+    <div class="round-carousel-container bg-black">
+        <div class="round-carousel-dark slide bg-black" id="round-carousel">
+            <div class="round-carousel-item">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="Groceries">
+                <p class="text-white">Groceries</p>
+            </div>
+            <div class="round-carousel-item">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="Mobile Phone">
+                <p class="text-white">Mobile Phone</p>
+            </div>
+            <div class="round-carousel-item">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100" alt="Icon 3">
+                <p class="text-white">Furnictures</p>
+            </div> 
+            <div class="round-carousel-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" alt="Icon 4">
+                <p class="text-white">Home Appliences</p>
+            </div>
+            <div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1715946171066.png?alt=media&token=c7567353-72e4-459a-9005-513e171c5ec0" alt="Icon 9">
+                <p class="text-white">Mobile Cover</p>
+            </div><div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716107797424.png?alt=media&token=389e7072-4b59-45ba-bb2d-9882b41efd67" alt="Icon 9">
+                <p class="text-white">SunGlasses</p>
+            </div><div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1715946837327.png?alt=media&token=cd27fa3d-1700-4c02-b9fb-47c71af5cd06" alt="Icon 9">
+                <p class="text-white">Jewelleries</p>
+            </div><div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716040058853.jpg?alt=media&token=44e5133f-8dde-4d7d-ad5e-9236e1d9d757" alt="Icon 9">
+                <p class="text-white">Bags</p>
+            </div><div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716093666650.png?alt=media&token=b4d18f94-9d6c-4d1b-a2fc-54a389f6834f" alt="Icon 9">
+                <p class="text-white">Graphics Card</p>
+            </div><div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716107263813.png?alt=media&token=256e5463-54a8-4784-9770-955fd05d0cd4" alt="Icon 9">
+                <p class="text-white">Drone</p>
+            </div>
+            <div class="round-carousel-item">
+                <img src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" alt="Icon 6">
+                <p class="text-white">Toys</p>
+            </div>
+             <div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716108609842.png?alt=media&token=df848ccb-445c-4876-94ea-19fda0a404ed" alt="Icon 9">
+                <p class="text-white">Camera</p>
+            </div>
+            <div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716126106477.png?alt=media&token=446d335d-b4e7-4e63-879d-f0acb37457f3" alt="Icon 9">
+                <p class="text-white">Laptop</p>
+            </div>
+            <div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716127563904.jpg?alt=media&token=cf18fdf6-1118-4221-8200-86283764bdc3" alt="Icon 9">
+                <p class="text-white">X-Box</p>
+            </div>
+            <div class="round-carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/imresizer-1716131210316.jpg?alt=media&token=e5acd78b-9fd4-4aa0-a60e-3db66b548f18" alt="Icon 9">
+                <p class="text-white">Gym</p>
+            </div>
+          
+           
+            
+        </div>
+ 
+        </div>
+    </div>
+    <!-- Main Carousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/corsol.jpeg?alt=media&token=0a0ba3d6-daf3-4005-b04c-26b04130800a" class="d-block w-100 mx-auto carousel-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/2.jpg?alt=media&token=48cee6af-c79c-4877-88ce-a8eaee7dc3e4" class="d-block w-100 mx-auto carousel-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/7.jpg?alt=media&token=fd9a9226-1534-4f9f-bd31-af7a230c614d" class="d-block w-100 mx-auto carousel-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
   
-            <!-- Card Area -->
-            <div id="card" class="col-md-12">
-                <div class="row row-cols-1 row-cols-md-6 g-4">
-                    <div class="col">
-                      <div class="card">
-                        <img src="https://m.media-amazon.com/images/I/61jJwA3PEBL._SX679_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
+    <!-- Card Area -->
+    <div class="container col-md-12"id="watchdiv">
+        <h1 class="col-md-12" id="watches">Watches</h1>
+    </div>
+    <div id="card" class="col-md-12">
+        <div class="row row-cols-1 row-cols-md-6 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61jJwA3PEBL._SX679_.jpg" class="card-img-top" alt="..."><hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <div class="col">
-                      <div class="card">
-                        <img src="https://m.media-amazon.com/images/I/61lCVbqb9rL._SX679_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
                     </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="https://m.media-amazon.com/images/I/71X6ESaIAvL._AC_UL320_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="https://m.media-amazon.com/images/I/61AHiYyu3ZL._AC_UL320_.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
                   </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                     <hr class="hr1">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61lCVbqb9rL._SX679_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71X6ESaIAvL._AC_UL320_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61AHiYyu3ZL._AC_UL320_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                     </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="container col-md-12"id="mobilediv">
+        <h1 class="col-md-12"id="mobile" >Mobile</h1>
+    </div>
+    <div id="card" class="col-md-12">
+        <div class="row row-cols-1 row-cols-md-6 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61jJwA3PEBL._SX679_.jpg" class="card-img-top" alt="..."><hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                     <hr class="hr1">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                        <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/717RAJXS0tL._SY500_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61lCVbqb9rL._SX679_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                   </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71X6ESaIAvL._AC_UL320_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61AHiYyu3ZL._AC_UL320_.jpg" class="card-img-top" alt="...">
+                    <hr class="hr1">
+                    <div class="card-body">
+                       <h5 class="card-title">Card title</h5>
+                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                       
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                       <a href="" class="  btn btn-outline-primary"id="Cartbutton">Add to Cart</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>VKart is an online shopping platform that offers a wide range of products to its customers. It provides a convenient and user-friendly interface for users to browse, search, and purchase items from various categories.
+                        
+                        </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@example.com</li>
+                        <li>Phone: +1234567890</li>
+                        <li>Address: 123 Street, City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>

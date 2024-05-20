@@ -164,7 +164,7 @@ hr{
     font-size: 40px;
     color: #fcfcfc;
     text-align: center;
-    background-color: #000000;
+   
     padding-bottom: 2%;
   
 
@@ -172,7 +172,7 @@ hr{
 #watchdiv{
     background-color: #04101d;
     padding: 2vh;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/watch_screentime_24dp_FILL0_wght400_GRAD0_opsz24.svg?alt=media&token=84e55bbf-92d7-45ab-a6fe-30905627e325);
+    background-image: url(https://assets.hardwarezone.com/img/2023/10/g3.jpg);
     padding-left: 20pt;
     font-weight: 600;
     max-width: 100%;
@@ -186,7 +186,7 @@ hr{
     padding-left: 20pt;
     font-weight: 600;
     max-width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/smartphone_24dp_FILL0_wght400_GRAD0_opsz24.png?alt=media&token=0f0e04ae-c269-4061-a9d2-e25fba3d4514);
+    background-image: url(https://assets.hardwarezone.com/img/2023/10/g3.jpg);
      
     margin-top: 2vh;
 
@@ -199,5 +199,14 @@ hr{
     font-size: 40px;
     color: #fcfcfc;
     text-align: center;
-    background-color: #3017173f;
+   
+}
+.img-gshock{
+    height: 200px;
+    width: 179px;
+    align-content: center;
+    
+}
+.card{
+    padding: 0%;
 }

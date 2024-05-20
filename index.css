@@ -54,6 +54,7 @@ header nav.navbar .navbar-nav .nav-link i {
     padding-right: 5vh;
     
     
+    
 
 }
 
@@ -172,12 +173,12 @@ hr{
 #watchdiv{
     background-color: #04101d;
     padding: 2vh;
-    background-image: url(https://assets.hardwarezone.com/img/2023/10/g3.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/Gshock.png?alt=media&token=8e1523ce-4b79-42bc-b8f7-a17a93cb001f);
     padding-left: 20pt;
     font-weight: 600;
     max-width: 100%;
     margin-top: 2px;
-    
+    height: 300px;
      
 }
 #mobilediv{
@@ -186,14 +187,14 @@ hr{
     padding-left: 20pt;
     font-weight: 600;
     max-width: 100%;
-    background-image: url(https://assets.hardwarezone.com/img/2023/10/g3.jpg);
-     
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/Get%20latest%20offers%20by%20Login%20to%20our%20website.png?alt=media&token=b76dd67e-4de7-4787-a011-3b2f85bebbf2);
+     height: 300px;
     margin-top: 2vh;
 
 }
 #mobile{
     font-family: "Poppins" 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 2vh;
+    padding: 12vh;
     font-weight: 600;  
     font-style: italic;
     font-size: 40px;
@@ -208,5 +209,12 @@ hr{
     
 }
 .card{
-    padding: 0%;
+    padding: 2px;
+     
 }
+.mobilebanner{
+   width: 1600px;
+   margin-top: 2vh;
+ 
+}
+ 

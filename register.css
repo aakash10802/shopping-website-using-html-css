@@ -1,0 +1,23 @@
+body{
+ background-image:url( https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96); 
+ background-size:cover;
+
+}  
+section {
+    padding: 10px;
+    margin: 19vh;
+    opacity: 0.95;
+    margin-top: -2vh;
+  }
+  #form {
+    background-color: rgba(11, 53, 49, 0.233);
+  }
+  form{
+    color: rgb(255, 255, 255);
+  }
+  label{
+    color:rgb(255, 255, 255)
+  }
+  h1{
+    color: rgba(227, 229, 253, 0.884);
+  }

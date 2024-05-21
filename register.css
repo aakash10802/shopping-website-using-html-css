@@ -21,3 +21,6 @@ section {
   h1{
     color: rgba(227, 229, 253, 0.884);
   }
+  footer{
+    margin-top: -10vh;
+  }

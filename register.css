@@ -1,8 +1,4 @@
-body{
- background-image:url( https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96); 
- background-size:cover;
-
-}  
+  
 section {
     padding: 10px;
     margin: 19vh;
@@ -11,16 +7,16 @@ section {
     margin-bottom: -.5vh;
   }
   #form {
-    background-color: rgba(11, 53, 49, 0.233);
+    background-color: rgb(255, 255, 255);
   }
   form{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   label{
-    color:rgb(255, 255, 255)
+    color:rgb(0, 0, 0)
   }
   h1{
-    color: rgba(227, 229, 253, 0.884);
+    color: rgba(0, 0, 0, 0.884);
   }
   .footer {
     background-color: #04101d; 
@@ -72,4 +68,14 @@ header nav.navbar .navbar-nav .nav-link {
 
 header nav.navbar .navbar-nav .nav-link i {
     margin-right: 5px;  
+}
+
+.card-footer {
+  background-color: #02162cd0 !important;
+  color: #e6dede !important;
+
+}
+.card-footer a{
+  text-decoration: none;
+  color: #ffffff;
 }

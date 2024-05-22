@@ -2,12 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image:url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
-    background-size: cover;
+    
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin : 0 auto;
     background-color: #ffffffe1;
     padding: 20px;
     box-shadow: 10 2 10px rgba(65, 11, 163, 0.925);
@@ -15,16 +14,17 @@ body {
     color: rgb(0, 0, 0);
     border-width: 2px;
     border-color: rgb(2, 29, 63);
-    border: 1px solid #ffffff;
-    rotate: inherit;
+    border: 1px  solid #0000001f;
+    border-radius: 10px;
+   
 }
 h1 {
     color: #2874f0;
+    font-family: 'Courier New', Courier, monospace;
 }
 .profile-section {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;           
 }
 .profile-info {
     flex: 1;
@@ -37,29 +37,30 @@ h1 {
     margin: 5px 0;
 }
 .profile-image {
-    flex: 0 0 200px;
+    flex: 0 0 150px;
+    margin-top: -5vh;
+    margin-right: 15vh;
+    margin-bottom: 0;
+    align-items: flex-start;
+    padding-bottom: 10vh;
+    
+     
 }
 .profile-image img {
     width: 100%;
     border-radius: 50%;
     border: 2px solid #2f0038;
+    padding: 2px;
 }
 .upgrade-section {
-    margin-top: 20px;
+    margin-top: 18px;
+    padding-right: 2vh;
+    margin-top:5vh;
 }
-.upgrade-section button {
-    background-color: #3466b6;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-.upgrade-section button:hover {
-    background-color: #000000;
-}
+ 
+
 header nav.navbar {
-    background-image:url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
-    background-size:cover; 
+    background-color: #04101d; 
 }
 
 header nav.navbar .navbar-brand {
@@ -78,15 +79,12 @@ header nav.navbar .navbar-nav .nav-link i {
     margin-right: 5px;  
 }
 .footer {
-    background-image:url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
-    background-size:cover;
+    background-color: #04101d; 
     padding: 1vh;     
     padding-top: 25px;
     opacity:.95;
-    padding-left: 10vh;
- 
-    
-     
+    padding-left: 10vh;    
+    margin-top: 10vh;
 }
 
 .footer h5 {
@@ -118,6 +116,32 @@ hr{
 }
 .container-footer{
     padding-top: 3vh;
-    padding-left:120px
-    border-top
+    padding-left:120px;
+    margin-bottom :10vh;
+    
 }
+.upgrade-section{
+    margin-left: 100vh;
+    border: bold 0 2  #000000;
+    margin-top: 4vh;
+    padding-left:-2vh;
+    margin-top:  -6vh;
+    font-family: monospace;
+    
+}
+#btn{
+    border-width: 2px;
+    border-color: rgb(2, 29, 63);
+    border: 1px  solid #0000001f;
+   border-radius: 10px;
+    background-color: #ffffff;
+    color: red;
+    padding: auto;
+    margin-left: 6vh;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+ #btn:hover{
+    background-color: red;
+    color: #fdfbfb;
+ }

@@ -1,29 +1,26 @@
 body {
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
-  height: 80%;
-  background-size:cover;
-  opacity: .8;
+  
 }
 
-img {
-  max-height: 60px;
-  max-width: 30px;
-  padding-left: 15px;
-}
+
 h1 {
-  color: rgba(255, 255, 255, 0.651);
+  color: rgb(0, 0, 0);
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
 }
-section {
-  padding: 20px;
-  margin: 19vh;
-  opacity: 0.95;
+section{   
+  margin-top: 19vh;
+  background-color: #ffffff; 
 }
 #form {
-  background-color: rgba(11, 53, 49, 0.233);
+  background-color: rgb(255, 255, 255);
+  color: #04101d;
 }
 .footer {
    background-color: #04101d; ;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
+
   padding: 5vh;
   margin-top: 20vh;
 }
@@ -50,4 +47,35 @@ section {
 .footer p {
   margin-bottom: 0;
   color: #faf8f8;
+}
+header nav.navbar {
+  background-color: #04101d; ;
+}
+
+header nav.navbar .navbar-brand {
+  color: rgb(253, 253, 253); 
+  font-size: 40px; 
+  width: 800px; 
+  padding-left: 2vh;
+  inline-size: 2%;
+}
+
+header nav.navbar .navbar-nav .nav-link {
+  color: rgb(255, 255, 255) !important; 
+}
+
+header nav.navbar .navbar-nav .nav-link i {
+  margin-right: 5px;  
+}
+.Remember{
+  color: #04101d !important;
+}
+.card-footer {
+  background-color: #02162cd0 !important;
+  color: #e6dede !important;
+
+}
+.card-footer a{
+  text-decoration: none;
+  color: #ffffff;
 }

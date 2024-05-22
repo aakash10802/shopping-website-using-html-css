@@ -1,6 +1,4 @@
-
-
-
+ 
 /* Header Styles */
 header nav.navbar {
     background-color: #04101d;  
@@ -34,11 +32,11 @@ header nav.navbar .navbar-nav .nav-link i {
 
 .secondary-nav {
     align-items: start; 
-    background-color: #f8f9fa;  
+    background-color: #04101d !important;   
 }
 
 .secondary-nav .nav-link {
-    color: #000;  
+    color: #04101d !important; 
 }
 
 /* Carousel Styles */

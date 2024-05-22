@@ -1,0 +1,57 @@
+header nav.navbar {
+    background-color: #04101d; 
+   
+}
+
+header nav.navbar .navbar-brand {
+    color: rgb(253, 253, 253); 
+    font-size: 40px; 
+    width: 800px; 
+    padding-left: 2vh;
+    inline-size: 2%;
+}
+
+header nav.navbar .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; 
+}
+
+header nav.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;  
+}
+.footer {
+    background-color: #04101d; 
+    
+    padding: 1vh;     
+    padding-top: 25px;
+    
+    
+     
+}
+
+.footer h5 {
+    color: #f7efef;
+    opacity: 1 !important;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #f7efef;
+}
+
+.footer ul li a {
+    color: #e6dede;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fdfbfb;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #faf8f8;
+}
+hr{
+    color: white;
+}

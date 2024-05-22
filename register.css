@@ -8,6 +8,7 @@ section {
     margin: 19vh;
     opacity: 0.95;
     margin-top: -2vh;
+    margin-bottom: -.5vh;
   }
   #form {
     background-color: rgba(11, 53, 49, 0.233);
@@ -21,6 +22,54 @@ section {
   h1{
     color: rgba(227, 229, 253, 0.884);
   }
-  footer{
-    margin-top: -10vh;
-  }
+  .footer {
+    background-color: #04101d; 
+    padding: 1vh;
+    margin-top: 2vh;
+    padding-top: 25px;;
+     
+}
+
+.footer h5 {
+    color: #f7efef;
+    opacity: 1 !important;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #f7efef;
+}
+
+.footer ul li a {
+    color: #e6dede;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fdfbfb;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #faf8f8;
+}
+hr{
+    color: white;
+}
+  header nav.navbar {
+    background-color: #04101d;  
+}
+
+header nav.navbar .navbar-brand {
+    color: gold; 
+    font-size: 30px;  
+}
+
+header nav.navbar .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; 
+}
+
+header nav.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;  
+}

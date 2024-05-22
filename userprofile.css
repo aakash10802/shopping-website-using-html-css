@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffffe1;
+    padding: 20px;
+    box-shadow: 10 2 10px rgba(65, 11, 163, 0.925);
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-color: rgb(2, 29, 63);
+    border: 1px solid #ffffff;
+    rotate: inherit;
+}
+h1 {
+    color: #2874f0;
+}
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.profile-info {
+    flex: 1;
+    margin-right: 20px;
+}
+.profile-info h2, .upgrade-section h2 {
+    margin-bottom: 10px;
+}
+.profile-info p {
+    margin: 5px 0;
+}
+.profile-image {
+    flex: 0 0 200px;
+}
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #2f0038;
+}
+.upgrade-section {
+    margin-top: 20px;
+}
+.upgrade-section button {
+    background-color: #3466b6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.upgrade-section button:hover {
+    background-color: #000000;
+}
+header nav.navbar {
+    background-image:url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
+    background-size:cover; 
+}
+
+header nav.navbar .navbar-brand {
+    color: rgb(253, 253, 253); 
+    font-size: 40px; 
+    width: 800px; 
+    padding-left: 2vh;
+    inline-size: 2%;
+}
+
+header nav.navbar .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; 
+}
+
+header nav.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;  
+}
+.footer {
+    background-image:url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
+    background-size:cover;
+    padding: 1vh;     
+    padding-top: 25px;
+    opacity:.95;
+    padding-left: 10vh;
+ 
+    
+     
+}
+
+.footer h5 {
+    color: #f7efef;
+    opacity: 1 !important;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #f7efef;
+}
+
+.footer ul li a {
+    color: #e6dede;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fdfbfb;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #faf8f8;
+}
+hr{
+    color: white;
+}
+.container-footer{
+    padding-top: 3vh;
+    padding-left:120px
+    border-top
+}

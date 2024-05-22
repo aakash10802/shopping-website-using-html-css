@@ -1,0 +1,70 @@
+header nav.navbar {
+    background-color: #04101d; 
+   
+}
+
+header nav.navbar .navbar-brand {
+    color: rgb(253, 253, 253); 
+    font-size: 40px; 
+    width: 800px; 
+    padding-left: 2vh;
+    inline-size: 2%;
+}
+
+header nav.navbar .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; 
+}
+
+header nav.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;  
+}
+.footer {
+    background-color: #04101d; 
+    padding: 1vh;     
+    padding-top: 25px;
+    opacity:.95;
+    
+     
+}
+
+.footer h5 {
+    color: #f7efef;
+    opacity: 1 !important;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #f7efef;
+}
+
+.footer ul li a {
+    color: #e6dede;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fdfbfb;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #faf8f8;
+}
+hr{
+    color: white;
+}
+section{
+    background-image:url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
+    background-size:cover;
+     
+     
+}
+#formbody{
+    background-color: #04101d; 
+    color: white;
+         
+}
+#innerdiv{
+    background-color: #04101d; 
+}

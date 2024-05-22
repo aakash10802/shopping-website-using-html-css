@@ -2,6 +2,7 @@ body {
   background-image: url(https://firebasestorage.googleapis.com/v0/b/aakashs-c4ebb.appspot.com/o/714shots_so.png?alt=media&token=ca48ea55-bf87-4b9c-9d2a-a909a6f5ee96);
   height: 80%;
   background-size:cover;
+  opacity: .8;
 }
 
 img {
@@ -21,25 +22,7 @@ section {
   background-color: rgba(11, 53, 49, 0.233);
 }
 .footer {
-  background: rgb(2, 0, 36);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(20, 20, 57, 1) 35%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(20, 20, 57, 1) 35%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(20, 20, 57, 1) 35%,
-    rgba(0, 0, 0, 1) 100%
-  );
+   background-color: #04101d; ;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
   padding: 5vh;
   margin-top: 20vh;

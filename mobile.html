@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: scale-down ;                                  ;
+        }
+       h4 {
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.2em;
+        }
+        .card-text {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .hr1 {
+            border-top: 1px solid #ddd;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1px;
+        }
+       
+        #mainbody{
+            background-color: #e5e9ec;
+            
+        }
+        h3{
+            padding: 2vh;
+        }
+.footer{
+    background-color:#04101d;
+    padding-top: 4vh;
+    margin-top: 2vh;
+    padding: 4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}     
+.footer h5 {
+    color: #f7efef;
+    opacity: 1 !important;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #f7efef;
+}
+
+.footer ul li a {
+    color: #e6dede;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fdfbfb;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #faf8f8;
+}
+hr{
+    color: white;
+}
+  header nav.navbar {
+    background-color: #04101d;  
+}
+
+header nav.navbar .navbar-brand {
+    color: gold; 
+    font-size: 30px;  
+}
+
+header nav.navbar .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; 
+}
+
+header nav.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;  
+}
+#acer{
+    padding: 2vh;
+}
+    </style>
+</head>
+<body>
+   <!-- header section -->
+   <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">V-kart</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-star"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plususer.html">Plus user</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container mt-4 " id="mainbody">
+        <div>
+            <h3 class="text-black-50"> Components</h3>
+        </div>
+        <div id="card" class="row row-cols-1 row-cols-md-4 ">
+            <!-- Card 1 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l01blow0/ram/n/f/h/8gb-ddr3-desktop-memory-hx318c10f-8-hyperx-original-imagbxamqxhddmsv.jpeg?q=70" class="card-img-top" alt="Smart Watches">
+                    <hr class="hr1">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Hyper X Rams</h5>
+                        <p class="card-text">
+                            HyperX Fury DDR3 8 GB (Dual Channel) PC (1866MHz CL10 DIMM Desktop Memory
+                        </p>
+                        <h4>₹ 1075</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/128/128/kvtuxe80/ram/n/o/y/f4-4000c18d-32gvk-g-skill-original-imag8n3kmn2qy2vh.jpeg?q=70&crop=false" class="card-img-top" alt="Samsung Smart-Watch">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">G skill </h5>
+                        <p class="card-text">
+                            G Skill Ripjaws DDR4 32 GB (Dual Channel) PC (4000MHz CL18 DIMM Desktop Memory
+                        </p>
+                        <h4>₹ 2000</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=70" class="card-img-top" alt="Hillfiger" id="acer">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Acer monitor 22"</h5>
+                        <p class="card-text">
+                            Acer 21.5 inch Full HD IPS Panel with VGA, HDMI, Ergonomic Stand, 2X2W Inbuilt Speakers 
+
+                        </p>
+                        <h4>₹ 5000</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/kpwybgw0/ram/3/j/h/cmk8gx4m1e3200c16-corsair-original-imag4fg3vw4hwzr9.jpeg?q=70" class="card-img-top" alt="Boult Smart Watches">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Vengence DDR4 8gb</h5>
+                        <p class="card-text">
+                            Corsair VENGEANCE LPX DDR4 8 GB PC (8GBx1) 3200MHz CL16 Desktop RAM
+                        </p>
+                        <h4>₹ 6500</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l0pm3680/data-cable/lan-cable/a/z/l/1-meter-patch-cable-rj45-ethernet-cat5-5e-network-internet-wire-original-imagcfqdhd7jvpen.jpeg?q=70" class="card-img-top" alt="Fire-Boltt Hurricane">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ethernet Cable</h5>
+                        <p class="card-text">
+                            TERABYTE Ethernet Cable 8.5 m 8.50 METER Patch Cable RJ45 Ethernet CAT5/5E Network Internet
+                        </p>
+                        <h4>₹ 251</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src=" https://rukminim2.flixcart.com/image/612/612/xif0q/graphics-card/f/r/a/geforce-rtx-4060-twin-x2-8gb-n40602-08d6-173051n-inno3d-original-imagt99zzj2bcv8v.jpeg?q=70" class="card-img-top" alt="G shock">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">graphics-card</h5>
+                        <p class="card-text">
+                            Inno3D NVIDIA GEFORCE RTX 4060 Twin X2 8GB- N40602-08D6-173051N 8 GB GDDR6 Graphics Card
+                        </p>
+                        <h4>₹ 22500</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/z/e/i/255-g8-laptop-hp-original-imagrfr3trshn7eg.jpeg?q=70" class="card-img-top" alt="Fossil Hybrid Smartwatch">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">HP Laptop</h5>
+                        <p class="card-text">
+                            HP 255 G8 Laptop (Intel Core i3-1115G4/8GB/256GB SSD/Windows 10 Home)
+                        </p>
+                        <h4>₹ 20995</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a> &nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/m/j/k/-original-imagvyw9unnduebd.jpeg?q=70" class="card-img-top" alt="Fitbit Versa 3">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI Laptop</h5>
+                        <p class="card-text">
+                            MSI GF63 Thin Laptop (Intel Core i3-1115G4/8GB/256GB SSD/Windows 10 Home)
+                        </p>
+                        <h4>₹ 29999</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>About Us</h5>
+					<p>VKart is an online shopping platform that offers a wide range of products to its customers. It provides a convenient and user-friendly interface for users to browse, search, and purchase items from various categories.</p>
+				</div>
+				<div class="col-md-4">
+					<h5>Quick Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Service.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h5>Contact Us</h5>
+					<ul class="list-unstyled">
+						<li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+						<li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
+						<li>Address: 123 Street, City, Country</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>&copy; 2024 V-kart. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

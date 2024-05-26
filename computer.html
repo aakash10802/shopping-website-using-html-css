@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: scale-down ;                                  ;
+        }
+       h4 {
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.2em;
+        }
+        .card-text {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .hr1 {
+            border-top: 1px solid #ddd;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1px;
+        }
+       
+        #mainbody{
+            background-color: #e5e9ec;
+            
+        }
+        h3{
+            padding: 2vh;
+        }
+.footer{
+    background-color:#04101d;
+    padding-top: 4vh;
+    margin-top: 2vh;
+    padding: 4vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}     
+.footer h5 {
+    color: #f7efef;
+    opacity: 1 !important;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #f7efef;
+}
+
+.footer ul li a {
+    color: #e6dede;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fdfbfb;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color: #faf8f8;
+}
+hr{
+    color: white;
+}
+  header nav.navbar {
+    background-color: #04101d;  
+}
+
+header nav.navbar .navbar-brand {
+    color: gold; 
+    font-size: 30px;  
+}
+
+header nav.navbar .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; 
+}
+
+header nav.navbar .navbar-nav .nav-link i {
+    margin-right: 5px;  
+}
+
+    </style>
+</head>
+<body>
+   <!-- header section -->
+   <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">V-kart</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-star"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plususer.html">Plus user</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container mt-4 " id="mainbody">
+        <div>
+            <h3>Computer and Components</h3>
+        </div>
+        <div id="card" class="row row-cols-1 row-cols-md-4 ">
+            <!-- Card 1 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/c/i/q/-original-imahf6u9gsyyh8hg.jpeg?q=70" class="card-img-top" alt="Smart Watches">
+                    <hr class="hr1">
+                    <div class="card-body"> 
+                        <h5 class="card-title">ASUS Chromebook</h5>
+                        <p class="card-text">ASUS Chromebook Intel Celeron Dual Core N4500 - (4 GB/64 GB EMMC Storage/Chrome OS)</p>
+                        <h4>₹ 22500</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/screen-guard/screen-guard/4/b/d/asg-14715-saco-original-imaghqbah9jycshw.jpeg?q=70" class="card-img-top" alt="Samsung Smart-Watch">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Acer Laptop</h5>
+                        <p class="card-text">Acer Intel Celeron Dual Core N4500 - (8 GB/128 GB EMMC Storage/Chrome OS)</p>
+                        <h4>₹ 20500</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/screen-guard/screen-guard/4/b/d/asg-14715-saco-original-imaghqbah9jycshw.jpeg?q=70" class="card-img-top" alt="Hillfiger">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo</h5>
+                        <p class="card-text">Lenovo V15 Intel Celeron Dual Core 4th Gen - (8 GB/256 GB SSD/Windows 11 Home)</p>
+                        <h4>₹ 25000</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/5/7/o/-original-imagw4gqwjvm6ds6.jpeg?q=70" class="card-img-top" alt="Boult Smart Watches">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Infinix Inbook Y2 Plus</h5>
+                        <p class="card-text">Infinix Inbook Y2 Plus Intel Core i5 11th Gen 1155G7 - (16 GB/512 GB SSD/Windows 11 Home) </p>
+                        <h4>₹ 26500</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/f/t/x/14ian8-chromebook-lenovo-original-imagxf7ffzujd2qs.jpeg?q=70" class="card-img-top" alt="Fire-Boltt Hurricane">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo Laptop</h5>
+                        <p class="card-text">
+                            Lenovo IdeaPad 3 Intel Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home)
+                        </p>
+                        <h4>₹ 25100</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/c/u/a/255-g8-notebook-hp-original-imagjhbj4jf3pjdy.jpeg?q=70" class="card-img-top" alt="G shock">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Hp 24y</h5>
+                        <p class="card-text">
+                            Hp 24y Intel Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home)
+                        </p>
+                        <h4>₹ 22500</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/z/e/i/255-g8-laptop-hp-original-imagrfr3trshn7eg.jpeg?q=70" class="card-img-top" alt="Fossil Hybrid Smartwatch">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">HP Laptop</h5>
+                        <p class="card-text">
+                            HP 255 G8 Laptop (Intel Core i3-1115G4/8GB/256GB SSD/Windows 10 Home)
+                        </p>
+                        <h4>₹ 20995</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a> &nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/m/j/k/-original-imagvyw9unnduebd.jpeg?q=70" class="card-img-top" alt="Fitbit Versa 3">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI Laptop</h5>
+                        <p class="card-text">
+                            MSI GF63 Thin Laptop (Intel Core i3-1115G4/8GB/256GB SSD/Windows 10 Home)
+                        </p>
+                        <h4>₹ 29999</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/7/d/i/zl12-business-laptop-infinix-original-imagm83gc6xr8sau.jpeg?q=70" class="card-img-top" alt="Garmin Venu Sq">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Infinix Zerobook</h5>
+                        <p class="card-text">
+                            Infinix Zerobook Laptop (Intel Core i3-1115G4/8GB/256GB SSD/Windows 10 Home)
+                        </p>
+                        <h4>₹ 49990</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/y/t/i/-original-imahyyhvbhs9vh6z.jpeg?q=70" class="card-img-top" alt="Garmin Venu Sq">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo IdeaPad</h5>
+                        <p class="card-text">
+                            Lenovo IdeaPad Slim 3 Laptop (Intel Core i3-1115G4/8GB/256GB)
+                        </p>
+                        <h4>₹ 71990</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer/z/w/j/xl422-thin-and-light-laptop-infinix-original-imags7v8m4zcsab2.jpeg?q=70" class="card-img-top" alt="Garmin Venu Sq">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Inbook X3 Slim</h5>
+                        <p class="card-text">
+                           Inbook X3 Slim Laptop (Intel Core i3-1115G4/8GB/256GB SSD/Windows 10 Home)
+                        </p>
+                        <h4>₹ 61990</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="col product-card">
+                <div class="card h-100">
+                    <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/computer/p/6/j/-original-imagy2hehs8yan6b.jpeg?q=90" class="card-img-top" alt="Garmin Venu Sq">
+                    <hr class="hr1">
+                    <div class="card-body">
+                        <h5 class="card-title">Zebronics Laptop</h5>
+                        <p class="card-text">
+                            Zebronics Zeb-Book Laptop (Intel Core i3-1115G4/8GB/256GB SSD/Windows 10 Home
+                        </p>
+                        <h4>₹ 21990</h4>
+                        <hr class="text-black">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-outline-danger" id="Viewmore">View More</a>&nbsp;
+                            <a href="#" class="btn btn-outline-primary" id="Cartbutton">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>About Us</h5>
+					<p>VKart is an online shopping platform that offers a wide range of products to its customers. It provides a convenient and user-friendly interface for users to browse, search, and purchase items from various categories.</p>
+				</div>
+				<div class="col-md-4">
+					<h5>Quick Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Service.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h5>Contact Us</h5>
+					<ul class="list-unstyled">
+						<li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+						<li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
+						<li>Address: 123 Street, City, Country</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>&copy; 2024 V-kart. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
